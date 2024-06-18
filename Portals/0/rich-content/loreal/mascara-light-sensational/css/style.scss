@@ -1,0 +1,1011 @@
+$color_1: #000;
+$color_3: #fff;
+$color_4: #fdc00f;
+$color_5: #ca549a;
+$color_main: #ff0d83;
+$font-family_1: 'Barlow', Tahoma, Verdana, sans-serif;
+$font-family_3: 'Montserrat', Tahoma, Verdana, sans-serif;
+$font-family_4: 'Barlow Condensed', Tahoma, Verdana, sans-serif;
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(32px);
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(32px);
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slidedown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-32px);
+    transform: translateY(-32px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-32px);
+    transform: translateY(-32px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideright {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideright {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideleft {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+#es-maybelline.es-maybelline {
+  font-family: $font-family_1;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 982px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background: $color_main;
+
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-family: $font-family_1;
+    color: $color_1;
+  }
+
+  h3 {
+    font-family: $font-family_1;
+    color: $color_1;
+  }
+
+  h4 {
+    font-family: $font-family_1;
+    color: $color_1;
+  }
+
+  h5 {
+    font-family: $font-family_1;
+    color: $color_1;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .es-kv__logo {
+    background: #000;
+    padding: 20px 16px;
+  }
+
+  .es-kv__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .es-kv__img--logo {
+    opacity: 0;
+    -webkit-animation: slidedown 0.6s forwards;
+    animation: slidedown 0.6s forwards;
+  }
+
+  .es-kv__img--badge {
+    display: none;
+    padding-top: 24px;
+    margin-left: 0;
+  }
+
+  .es-kv__img--photo {
+    width: 100%;
+  }
+
+  .es-kv__img--packshot {
+    max-height: 300px;
+  }
+
+  .es-kv__img--info {
+    width: 60%;
+    margin-left: 0;
+  }
+
+  .es-kv__content {
+    position: relative;
+  }
+
+  .es-kv__title {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-family: $font-family_3;
+    color: $color_main;
+    line-height: 1;
+    opacity: 0;
+    -webkit-animation: slideright 0.6s forwards;
+    animation: slideright 0.6s forwards;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+
+    &--span {
+      display: block;
+      color: $color_3;
+      font-size: 24px;
+    }
+  }
+
+  .es-kv__photo {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .es-kv__info {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    z-index: 2;
+    opacity: 0;
+    -webkit-animation: slideleft 0.8s forwards;
+    animation: slideleft 0.8s forwards;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+
+  .es-features {
+    margin-bottom: 48px;
+    position: relative;
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/maybelline/mascara-light-sensational/img/fireworks-bg.png');
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+
+  .es-features__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    padding: 32px 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-wrap: balance;
+    font-family: $font-family_4;
+  }
+
+  .es-features__title--span {
+    font-weight: 300;
+  }
+
+  .es-features__subtitle {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-size: 16px;
+    font-family: $font-family_3;
+    font-weight: inherit;
+    padding: 0 16px;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -1px;
+  }
+
+  .es-features__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 32px 0px;
+  }
+
+  .es-features__single {
+    width: 307px;
+  }
+
+  .es-features__tile {
+    overflow: hidden;
+  }
+
+  .es-features__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: all ease-in-out 200ms;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  .es-features__benefit {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-family: $font-family_4;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .es-features__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-family: $font-family_3;
+    font-weight: inherit;
+    margin-bottom: 16px;
+    text-align: center;
+    text-wrap: balance;
+    letter-spacing: -1px;
+  }
+
+  .es-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 16px;
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/maybelline/mascara-light-sensational/img/cross-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 64px;
+  }
+
+  .es-colors__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: -1px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    padding: 0 16px;
+    font-family: $font-family_4;
+  }
+
+  .es-colors__title--span {
+    font-weight: 300;
+  }
+
+  .es-colors__single {
+    // width: 85%;
+  }
+
+  .es-colors__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 32px 16px;
+  }
+
+  .es-colors__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .es-colors__single {
+    // width: 170px;
+
+    &:hover {
+      .es-colors__link {
+        background-color: $color_1;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  .es-colors__tile {
+    height: 285px;
+  }
+
+  .es-colors__eye {
+    margin-left: 0;
+    max-width: 140px;
+  }
+
+  .es-colors__mascara {
+    margin-top: -166px;
+    margin-left: 50px;
+    height: 285px;
+  }
+
+  .es-colors__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-size: 28px;
+    margin-top: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-family_4;
+    font-style: italic;
+    color: $color_main;
+
+    &--line {
+      font-size: 20px;
+      display: block;
+    }
+
+    &--desc {
+      font-family: $font-family_3;
+      text-align: center;
+    }
+  }
+
+  .es-colors__link {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-family_4;
+    background: $color_main;
+    color: $color_3;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-style: italic;
+    border-radius: 99px;
+    margin-top: -67px;
+    margin-left: 141px;
+    text-decoration: underline;
+  }
+
+  .es-ba__single {
+    width: 333px;
+  }
+
+  .es-ba__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px 16px;
+    font-family: $font-family_4;
+  }
+
+  .es-ba__title--span {
+    font-weight: 300;
+  }
+
+  .es-ba__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 32px;
+    padding-inline: 32px;
+
+    @media (min-width: 576px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .es-ba__before {
+    max-width: 470px;
+    overflow: hidden;
+
+    @media (min-width: 576px) {
+      flex-basis: 50%;
+    }
+  }
+
+  .es-ba__after {
+    max-width: 470px;
+    overflow: hidden;
+
+    @media (min-width: 576px) {
+      flex-basis: 50%;
+    }
+  }
+
+  .es-ba__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
+
+    &:hover {
+      scale: 1.06;
+    }
+  }
+
+  .es-ba__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+
+    font-family: $font-family_3;
+    font-weight: inherit;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    text-align: center;
+    max-width: 800px;
+    padding-inline: 16px;
+  }
+
+  .es-ba__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 32px 0;
+    padding-block: 64px;
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/maybelline/mascara-light-sensational/img/bg-icons.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .es-ba__content--2 {
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/maybelline/mascara-light-sensational/img/fireworks-bg-2.png');
+    background-position: top right;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+
+  .es-ba__desc {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-size: 20px;
+    font-family: $font-family_4;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    text-wrap: balance;
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+
+  .es-effects {
+    display: flex;
+    flex-direction: column;
+    padding-block: 32px;
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+      gap: 4px;
+    }
+
+    @media (min-width: 768px) {
+      padding-inline: 32px;
+    }
+
+    &__leftCtn {
+      background-image: url('https://www.ros.net.pl/Portals/0/rich-content/maybelline/mascara-light-sensational/img/effects.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      aspect-ratio: 1/1;
+      padding-block: 32px;
+
+      @media (min-width: 576px) {
+        flex-basis: 50%;
+        padding-inline: 32px;
+      }
+    }
+
+    &__rightCtn {
+      display: flex;
+      aspect-ratio: 1/1;
+
+      img {
+        max-width: 100%;
+      }
+
+      @media (min-width: 576px) {
+        flex-basis: 50%;
+      }
+    }
+
+    &__title {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 32px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 32px;
+    }
+
+    &__text {
+      @media (min-width: 576px) {
+        height: 4rem;
+      }
+
+      @media (min-width: 850px) {
+        height: 3rem;
+      }
+    }
+
+    &__Ctn {
+      @media (min-width: 576px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+      }
+    }
+
+    &__single {
+      text-align: center;
+      text-wrap: balance;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: $font-family_4;
+      font-weight: 300;
+      width: 100%;
+    }
+
+    &__number {
+      color: $color_main;
+      font-size: 32px;
+      font-weight: 700;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      border: 1px solid $color_main;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+
+      p {
+        margin: 0;
+      }
+
+      @media (min-width: 576px) {
+        font-size: 48px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .es-disc {
+    margin: 0 16px;
+  }
+
+  .es-disc__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-weight: inherit;
+    text-align: center;
+    text-wrap: balance;
+    font-size: 11px;
+    padding-bottom: 24px;
+    font-family: $font-family_3;
+  }
+
+  .es-cross {
+    margin-bottom: 56px;
+    padding: 40px 16px;
+    background-image: url('https://www.ros.net.pl/Portals/0/rich-content/maybelline/mascara-light-sensational/img/fireworks-bg-3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .es-cross__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: -1px;
+    margin-bottom: 56px;
+    font-family: $font-family_4;
+    text-align: center;
+  }
+
+  .es-cross__title--span {
+    font-weight: 300;
+  }
+
+  .es-cross__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 32px 8px;
+  }
+
+  .es-cross__single {
+    max-width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+
+  .es-cross__packshot {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+
+  .es-cross__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .es-cross__name {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: $font-family_4;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+    min-height: 38px;
+  }
+
+  .es-cross__desc {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: $font-family_3;
+    font-weight: inherit;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+  }
+
+  .es-cross__link {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-size: 20px;
+    font-weight: inherit;
+    background: #000;
+    color: $color_3;
+    text-decoration: none;
+    padding: 16px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $font-family_4;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .es-footer__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+
+    font-weight: inherit;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .es-footer__logo {
+    background: #000;
+    padding: 20px 16px;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  #es-maybelline.es-maybelline {
+    .es-kv__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .es-kv__photo {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+    }
+
+    .es-kv__packshot {
+      bottom: 0;
+      left: -24px;
+      right: unset;
+    }
+
+    .es-kv__img--badge {
+      margin-right: 16px;
+      margin-left: auto;
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+
+    .es-kv__img--photo {
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .es-kv__content {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+    }
+
+    .es-kv {
+      padding-top: 37px;
+      position: relative;
+    }
+
+    .es-kv__badge {
+      position: absolute;
+      top: 0;
+      right: 40px;
+    }
+
+    .es-ba__single {
+      width: 210px;
+      transition: all 0.3s;
+
+      &:hover {
+        .es-ba__img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #es-maybelline.es-maybelline {
+    .es-kv__subtitle {
+      bottom: 32px;
+    }
+
+    .es-features__title {
+      font-size: 42px;
+    }
+
+    .es-benefits__title {
+      font-size: 58px;
+    }
+
+    .es-colors__title {
+      font-size: 42px;
+    }
+
+    .es-cross__title {
+      font-size: 42px;
+    }
+
+    .es-ba__title {
+      font-size: 38px;
+    }
+
+    .es-features__img {
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .es-features__single {
+      &:hover {
+        .es-features__img {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .es-colors__mascara {
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .es-colors__single {
+      &:hover {
+        .es-colors__mascara {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .es-cross__img {
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .es-cross__link {
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s;
+    }
+
+    .es-cross__single {
+      &:hover {
+        .es-cross__img {
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+        }
+
+        .es-cross__link {
+          background-color: $color_3;
+          color: $color_main;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 940px) {
+  #es-maybelline.es-maybelline {
+    .es-kv__title {
+      font-size: 48px;
+    }
+  }
+}
